@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Edit Profile</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+        <!--Bootstrap CSS-->
+         
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+         
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+        <!-- TODO: CHANGE
+        <link rel="stylesheet" type="text/css" href="custom.css">
+        -->
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img alt="" src="">
+                </a>
+            </div>
+            
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/home">BLabs</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="/home">Home</a></li>
+                <li class="active"><a href="/edit">Edit Profile</a></li>
+            </ul>
+            
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/register">Register</a></li>
+                <li><a href="/create_profile"><span class="glyphicon glyphicon-user"></span>Create a Profile</a></li>
+                <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <!--    should reference some logic to see if user is already logged in-->
+            </ul>
+        </div>
+        </nav>
+
+        <div class="container">
+            <h2>Edit Profile</h2><hr><br>
+                
+            <form action="/upload"  method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="picture">Profile Picture</label>
+                    <input type="file" name="photo" class="form-control-file">
+                    <!-- id="profilePicture"-->
+                </div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="biography">Biography</label>
+                    <textarea class="form-control" name="desc" id="biography" rows="5" placeholder="Biography" ></textarea>
+                </div>
+                
+                <input class="btn btn-primary" type="submit" value="Submit">
+
+            </form> 
+        </div>
+
+        
+        
+    </body>
+</html>

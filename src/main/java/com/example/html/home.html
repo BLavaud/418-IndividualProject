@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Home - View Profiles</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="custom.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img alt="" src="">
+                </a>
+            </div>
+            
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/home">BLabs</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/home">Home</a></li>
+                <li><a href="/edit">Edit Profile</a></li>
+            </ul>
+            
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/register">Register</a></li>
+                <li><a href="/create_profile"><span class="glyphicon glyphicon-user"></span>Create a Profile</a></li>
+                <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                <!--    should reference some logic to see if user is already logged in-->
+                
+            </ul>
+        </div>
+        </nav>
+        
+        <div class="container">
+            <h1>Home</h1><hr>
+            <h3>View Profiles</h3><br><br>
+        </div>
+        
+        <div class="container">
+            <div class="panel panel-default">
+                <div class="card" >
+                    <a href="#"></a>
+                    <img class="card-img-top" src="" alt="[Profile Picture]"><hr>
+                    <div class="card-body">
+                        <h4 class="card-title">[Profile Name]</h4>
+                        <p class="card-text">[Profile Description] </p>
+                        <a href="#" class="btn btn-primary">View Profile</a>
+                    </div>
+                    <!--  get profiles stored in mongo -->
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
+
+<!--
+  <!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Getting Started: Serving Web Content</title> 
+</head>
+<body>
+    <p>Image uplaoded: </p>
+    <img th:src="${imgSrc}" alt="User Photo">
+</body>
+</html>
+-->

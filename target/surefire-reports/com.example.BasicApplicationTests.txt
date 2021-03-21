@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.BasicApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.559 s - in com.example.BasicApplicationTests

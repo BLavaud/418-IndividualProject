@@ -1,0 +1,6 @@
+com\example\BasicApplication.class
+com\example\BasicController.class
+com\example\repositories\profile\Profile.class
+com\example\repositories\user\UserRepository.class
+com\example\repositories\user\User.class
+com\example\repositories\profile\ProfileRepository.class
